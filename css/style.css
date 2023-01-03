@@ -1,0 +1,344 @@
+/* ============
+    Home page 
+   ============*/
+
+#house {
+    width: 1124px;
+    height: 577px;
+    position: relative;
+    left: 12.3em;
+    top: 3em;
+    border: 15px solid #5a7eb3;
+    border-radius: 20px;
+}
+
+main button {
+    position: absolute;
+    left: 20em;
+    top: 14em;
+    padding: .75em;
+    background-color: #bb7de7;
+    color: yellow;
+    border: 5px solid #5a7eb3;
+    border-radius: .5em;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    animation: groter 1.5s infinite;
+}
+
+@keyframes groter {
+    0% { transform: scale(1); 
+    }
+
+    50% { transform: scale(1.2); 
+    }
+
+    100% { transform: scale(1); 
+    } 
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 49.3em;
+}
+
+footer p {
+    position: absolute;
+    left: 40em;
+    bottom: 6em;
+    font-size: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #e7d4f5;
+}
+
+footer button {
+    position: absolute;
+    left: 12em;
+    bottom: 8em;
+    padding: .75em;
+    background-color: #bb7de7;
+    color: white;
+    border: 5px solid #5a7eb3;
+    border-radius: .5em;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+/* ============
+       Game 
+   ============*/
+
+body {
+    background-color: #b7eaf7;
+}
+
+#gametext {
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+}
+
+header button {
+    margin-left: 1em;
+    margin-top: 1em;
+    background-color: #bb7de7;
+    color: white;
+    border: 5px solid #5a7eb3;
+    border-radius: .5em;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+main p {
+    position: absolute;
+    right: 370px;
+    top: 530px;
+    font-size: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #e7d4f5;
+}
+
+#huiskamer {
+    width: 1183px;
+    height: 609px;
+    position: relative;
+    left: 160px;
+    bottom: 45px;
+    border: 15px solid #5a7eb3;
+    border-radius: 20px;
+}
+
+#party {
+    width: 1183px;
+    height: 609px;
+    position: relative;
+    left: 160px;
+    bottom: 45px;
+    border: 15px solid #5a7eb3;
+    border-radius: 20px;
+}
+
+#angermeter {
+    position: absolute;
+    left: 850px;
+    top: 10px;
+}
+
+#img-lightswitch {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+#img-lightswitch:hover {
+    transform: scale(1.1);
+}
+
+#img-discoball {
+    position: absolute;
+    top: -10px;
+    left: 380px;
+    z-index: 100;
+    animation: disco 2.5s infinite;
+    visibility: hidden;
+}
+
+@keyframes disco {
+    0% { transform: translateY(0px) 
+    }
+
+    50% { transform: translateY(50px)
+    }
+
+    100% { transform: translateY(0px) 
+    }
+}
+
+.discolight {
+    filter: brightness(20%);
+    filter: hue-rotate(90deg);
+}
+
+#img-plant {
+    position: absolute;
+    left: 20px;
+    top: 270px;
+}
+
+#img-plant:hover {
+    transform: scale(1.1);
+}
+
+#img-tas {
+    position: absolute;
+    left: 720px;
+    top: 470px;
+}
+
+#img-tas:hover {
+    transform: scale(1.1);
+}
+
+
+#img-hond {
+   position: absolute;
+   top: 345px;
+   left: 180px;
+   z-index: 100;
+}
+
+#img-hond:hover {
+    transform: scale(1.1);
+}
+
+#img-bed {
+    position: absolute;
+    bottom: 60px;
+    right: 750px;
+}
+
+#img-bed:hover {
+    transform: scale(1.1);
+}
+
+#img-bowl {
+    position: absolute;
+    top: 460px;
+    right: 950px;
+ }
+
+ #img-bowl:hover {
+    transform: scale(1.1);
+}
+
+#img-fam {
+    position: absolute;
+    bottom: 25px;
+    right: 398px;
+}
+
+#img-fam:hover {
+    transform: scale(1.1);
+}
+
+#img-tv {
+    position: absolute;
+    top: 238px;
+    left: 830px;
+}
+
+#img-tv:hover {
+    transform: scale(1.1);
+}
+
+#img-stofzuiger {
+    position: absolute;
+    top: 400px;
+    right: 90px;
+}
+
+#img-stofzuiger:hover {
+    transform: scale(1.1);
+}
+
+#gameover {
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#startover {
+    position: absolute;
+    left: 570px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.shaking {
+    animation: shake 0.1s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0em); }
+    50% {transform: translateX(0.2em); }
+    100% {transform: translateX(0em); }
+}
+
+.aaien {
+    animation: aaien 0.5s infinite;
+}
+
+@keyframes aaien {
+    0% { transform: translateX(0em); }
+    50% {transform: translateX(0.3em); }
+    100% {transform: translateX(0em); }
+}
+
+.jump {
+    animation: springen 0.5s infinite;
+}
+
+@keyframes springen {
+    0% { 
+        transform:  translateY( 0 ) rotate( 0 ); 
+    }
+    50% {
+        transform:  translateY( -400px ) rotate(180deg); 
+    }
+    100%   { 
+        transform: translateY( 0 ) rotate(360deg); 
+    }
+  }
+
+
+/* ============
+      Bronnen 
+   ============*/
+
+   ul {
+    background-color: #bb7de7;
+    padding: 1.5em;
+    border-radius: .8em;
+    max-width: 50em;
+    margin-inline: auto;
+}
+
+li {
+    margin-left: 1.3em;
+    padding: 1.1em;
+    font-size: .98rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    max-width: 32.1em;
+    margin-inline: auto;
+    text-align: center;
+    background-color: #bb7de7;
+    border-radius: .8em;
+    padding: .5em;
+    color: white;
+    font-size: 1.6rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
