@@ -1,18 +1,11 @@
 /* ============
     Home page 
    ============*/
-/* *,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
 #house {
     width: 1124px;
     height: 577px;
-    position: relative;
+    position: absolute;
     left: 12.3em;
     top: 3em;
     border: 15px solid #5a7eb3;
